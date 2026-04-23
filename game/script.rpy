@@ -35,8 +35,9 @@ image bg hospital_room = Solid("#F5F5F5")
 # image zhouzhe surprised = Solid("#5D6D7E")
 # image zhouzhe determined = Solid("#2C3E50")
 
-# 莫莫立绘占位符 (可爱后辈 - 粉红色)
-image momo cheerful = Solid("#FFB6C1")
+# 莫莫立绘 (使用实际图片)
+image momo cheerful = "images/character/momo cheerful.png"
+# 其他表情占位符 (待添加实际图片)
 image momo proud = Solid("#FF69B4")
 image momo sad = Solid("#DB7093")
 image momo crying = Solid("#FF1493")
@@ -91,8 +92,6 @@ label start:
 
     narrator "舞萌舞萌DX玩家群"
 
-     neutral at left
-
     mc "作为一个舞萌老玩家，我可以很负责任的告诉你，女性玩家和男性玩家是两个完全不同的群体呢。"
 
     mc "女生啊，都是穿着可爱的cos服、只会选术力口曲、成天和男朋友腻歪在一起的生物～"
@@ -111,15 +110,9 @@ label start:
 
     friend "所以啊，你到现在还是个单身狗。"
 
-     neutral
-     angry at left
-
     mc "......"
 
     friend "成天只知道打真超檄代的歌，还是那种难听的要死的怪歌，谁稀罕和你拼机啊？"
-
-     angry
-     neutral at left
 
     narrator "周哲默然无语。"
 
@@ -132,9 +125,6 @@ label start:
     narrator "他喜欢早期歌曲，尽管它们可能不那么流行，但对他来说，这样的歌才是他真正喜欢的。"
 
     friend "别说是妹子了，就算是我一大老爷们，都不愿意陪你一起打。"
-
-     neutral
-     pain at left
 
     narrator "这句话像是一把锐利的刀子，直刺进了周哲的心脏。"
 
@@ -149,8 +139,6 @@ label start:
     narrator "没有人愿意陪他打真超檄的怪歌……"
 
     hide ahuang
-     pain
-     neutral at center
 
     narrator "其实，周哲也想过做出些改变，但是每次都是以失败告终。"
 
@@ -158,11 +146,7 @@ label start:
 
     narrator "什么白潘，白茄，白皇帝，他全都打不来！"
 
-     angry at center
-
     mc "啊，为什么我这么菜！"
-
-     angry
 
     narrator "气愤的关闭了群聊，周哲坐回沙发上，思索片刻，痛苦的捂住脸。"
 
@@ -179,25 +163,19 @@ label start:
 
     narrator "只有他，还停留在15800的水平。"
 
-     neutral at center
-
     mc "......"
 
     narrator "现实是残酷的，他的成绩却远远不及预期。"
 
     narrator "三年以来，他疯狂地练习，不断挑战高难度的曲目，但rating却始终停滞不前。"
 
-     tired at center
-
-    mc "唉......"
+    mc "唉……"
 
     narrator "被后来者超越的感觉，真的是糟糕透顶，但他已经习惯了。"
 
     narrator "只是......"
 
     mc "真的很羡慕啊，我什么时候也能变得像他们一样这么强......"
-
-     tired
 
     narrator "他沉默了片刻，然后深吸一口气，收起了手机。"
 
@@ -218,8 +196,6 @@ label start:
 
     narrator "【QQ】莫莫：【图片】"
 
-     neutral at center
-
     narrator "这种时候，莫莫怎么会发消息呢？"
 
     narrator "有些不祥的预感啊。"
@@ -227,8 +203,6 @@ label start:
     narrator "莫莫是他的后辈，一个舞萌玩家，平时最喜欢给他发的就是成绩图了。"
 
     narrator "这不会.....是成绩图吧？"
-
-     neutral
 
     narrator "周哲颤颤巍巍的低下了头，小心的打开了聊天窗口，瞥见了一张熟悉的歌曲成绩图。"
 
@@ -251,23 +225,17 @@ label start:
 
     narrator "即使隔着屏幕，他都能想象得出莫莫那副得意的小表情了。"
 
-     angry at left
-
     mc "……"
 
     mc "？"
 
     mc "好气啊！！！"
 
-     angry
-
     narrator "自己历经千辛万苦，每天练习，却怎么都打不好的提亚玛特，竟然被年轻的小学弟秒掉了？！"
 
     narrator "而且这语气是什么意思？是想让自己腼着脸向他请教吗？"
 
     narrator "门都没有！"
-
-     neutral at left
 
     narrator "不过，即使生气，该有的礼貌还是要有的。"
 
@@ -281,8 +249,6 @@ label start:
 
     momo "qaq前辈你真的不需要我教教吗？"
 
-     angry at left
-
     mc "嗯，真的不需要。"
 
     narrator "周哲强忍着拉黑的冲动，咬牙切齿的打下了这几个字。"
@@ -290,8 +256,6 @@ label start:
     show momo cheerful at right
 
     momo "好叭，那我继续去打舞萌啦~~(′ω`ゝ)"
-
-     neutral at left
 
     mc "……"
 
@@ -315,8 +279,6 @@ label start:
 
     momo "结果呢，莫名其妙就鸟了。"
 
-     angry at left
-
     mc "……"
 
     narrator "'莫名其妙'就鸟了。"
@@ -331,8 +293,6 @@ label start:
 
     narrator "飞升人别太嚣张了！"
 
-     angry
-
     narrator "他越想，越觉得心里发堵，好像被什么东西卡住了一样。"
 
     narrator "不爽啊，真的很不爽啊！被入坑仅仅一年时间的学弟轻松超越了啊！"
@@ -345,11 +305,7 @@ label start:
 
     narrator "是时候让你们回想起来，被真超檄支配的恐惧了！"
 
-     proud at center
-
     mc "一块钱，脑浆，如龙，启动！！！"
-
-     proud
 
     narrator "想着，周哲愤然起身，一把拿起手套和大水，直接向着机厅冲过去了！"
 
@@ -394,21 +350,13 @@ label chapter2:
 
     narrator "今天是周末，再加上这个点本来人就很多，让游戏厅显得异常热闹。"
 
-     neutral at center
-
     mc "人还是很多啊。"
-
-     neutral
 
     narrator "即使大风再起有四台舞萌，在十几个人面前依然显得少了点。"
 
     narrator "每台机子前都有人在打歌，后面的板凳上也有好多人排队等机位。"
 
-     neutral at center
-
     mc "嗯……"
-
-     neutral
 
     narrator "周哲微微皱眉。"
 
@@ -442,13 +390,9 @@ label chapter2:
 
     narrator "{size=-2}眼光帅气小少年莫莫，闪亮登场！{/size}"
 
-     neutral at left with dissolve
-
     narrator "周哲忍不住对比了一下自己的样子。"
 
     narrator "相较于莫莫，自己就完全是另外一副模样。"
-
-     tired at left with dissolve
 
     narrator "作为一个阴暗的宅男，他天生自带着阴郁的气质，好像被世界压得喘不过气来。"
 
@@ -458,21 +402,15 @@ label chapter2:
 
     narrator "这个可怜的家伙，一点活力都没有，就像个死气沉沉的僵尸一样。"
 
-     tired
-
     narrator "周哲也很清楚这一点，但没有丝毫想要改正的想法，平时除了吃喝拉撒睡，他几乎把自己关在屋内，连房门也不出。"
 
     narrator "要不是因为打舞萌能偶尔锻炼一下身体，他恐怕早就因为健康问题，猝死在屋里了。"
 
     narrator "这就是周哲，一个典型的废宅男！"
 
-     proud at left with dissolve
-
     narrator "此刻，他满脸阴沉，缓缓朝莫莫靠近！"
 
     mc "呵~莫莫，总算找到你了，桀桀桀。"
-
-     proud
 
     narrator "冷酷一笑，缓缓的接近着自己的小学弟。"
 
@@ -501,7 +439,6 @@ label chapter2:
 
     # ===== 撞击事件 =====
     show momo cheerful at right
-     neutral at left
 
     narrator "和迎面走来的周哲撞了满怀。"
 
@@ -509,16 +446,11 @@ label chapter2:
 
     narrator "【咔擦】"
 
-     pain at left with hpunch
-
     narrator "这是骨头断裂的声音。"
 
     narrator "本就脆弱的骨头，碰上热情小学弟的熊抱，直接断成两截了。"
 
     mc "疼死了！"
-
-     pain
-     angry at left with vpunch
 
     mc "啊，好痛！轻一点啊！你...你快给我撒手！"
 
@@ -533,16 +465,11 @@ label chapter2:
 
     narrator "莫莫急忙收回双手，尴尬的道歉。"
 
-     pain at left
-
     narrator "周哲咬着牙，嘴里喘着粗气，一瘸一拐的走到一边坐下。"
 
     momo "对不起，前辈。"
 
     mc "你还好意思道歉！疼死我了！"
-
-     angry
-     pain at left
 
     narrator "周哲捂着胸口，满额头的冷汗。"
 
@@ -563,13 +490,9 @@ label chapter2:
 
     narrator "莫莫乖巧的应了一声，灰溜溜的回去打歌了。"
 
-     neutral at left
-
     narrator "周哲又躺倒在座椅上休息了一会儿，才感觉恢复的差不多了。"
 
     mc "诶，真的得加强体质训练了。要，要不然，迟早会被这家伙给撞成残疾人。"
-
-     neutral
 
     narrator "看着一蹦一跳，一脸期待的莫莫，周哲心中涌现出一阵无力感。"
 
@@ -608,13 +531,9 @@ label chapter2:
 
     momo "前辈～前辈～我们一起拼机吧！"
 
-     neutral at left
-
     narrator "没过多久，莫莫兴奋的跑了过来。"
 
     mc "行吧。"
-
-     neutral
 
     narrator "周哲叹了口气，无奈的答应了莫莫。"
 
@@ -641,8 +560,6 @@ label chapter2:
 
     hide cg rating 15750 with dissolve
 
-     surprised at left with dissolve
-
     narrator "'157.......50吗？'"
 
     narrator "看着屏幕上rating，周哲愣了一下。"
@@ -654,8 +571,6 @@ label chapter2:
     show momo cheerful at right with dissolve
 
     momo "前辈？"
-
-     neutral at left with dissolve
 
     mc "啊？哦，没事没事，我走神了！"
 
@@ -670,8 +585,6 @@ label chapter2:
     narrator "'欢迎回来！'"
 
     narrator "随着滴蜡熊的语音响起，他们正式开始了游戏。"
-
-     proud at left with dissolve
 
     narrator "这时，周哲才想起自己此次出勤的目的。"
 
@@ -713,7 +626,6 @@ label chapter3:
 
     # play music bgm_tension fadein 1.0
 
-     proud at left
     show momo cheerful at right
 
     narrator "周哲一上来就选择了一块钱。"
@@ -729,8 +641,6 @@ label chapter3:
     narrator "只需要记住最恶心的部分，然后反复多练就行了，根本不会感到有压力。"
 
     mc "啊啊啊啊啊啊啊啊！一块钱！！！！！"
-
-     proud
 
     narrator "屏幕亮起时，那刺耳的声音立刻钻进了耳朵。"
 
@@ -761,8 +671,6 @@ label chapter3:
 
     narrator "短暂的沉默之后，一阵阵惊讶的呼声响彻全场。"
 
-     proud at left
-
     narrator "而周哲，依旧保持着淡定。"
 
     narrator "他在意的不是围观的舞萌吃的看法。"
@@ -788,8 +696,6 @@ label chapter3:
 
     narrator "【咔擦】"
 
-     pain at left with hpunch
-
     narrator "是骨头断裂的声音。"
 
     mc "诶哟！"
@@ -799,9 +705,6 @@ label chapter3:
     mc "好疼！"
 
     mc "不行不行，用力过猛了，手臂要断掉了！"
-
-     pain
-     tired at left
 
     narrator "而在他身旁，一众舞萌吃更是惊讶地捂住了嘴，仿佛被吓到了似的。"
 
@@ -832,8 +735,6 @@ label chapter3:
 
     narrator "舞萌吃纷纷如鸟兽散开，回去继续打歌了，看都不敢再看一眼。"
 
-     tired at left
-
     narrator "只留着周哲抱着胳膊坐在椅子上，一个人在风中凌乱。"
 
     mc "好...难受。"
@@ -847,8 +748,6 @@ label chapter3:
     mc "周哲欲哭无泪。"
 
     mc "早知道，应该拿小歌先热身的。"
-
-     tired
 
     narrator "他咬牙切齿，强忍剧痛，慢吞吞的站起来。"
 
@@ -869,8 +768,6 @@ label chapter3:
 
     momo "啊啊啊！！！打的好烂啊！"
 
-     neutral at left
-
     narrator "突然，莫莫绝望的声音从周哲身旁传来。"
 
     narrator "周哲眉毛一跳，顿时抬头望去。"
@@ -883,8 +780,6 @@ label chapter3:
 
     narrator "怎么回事？"
 
-     surprised at left
-
     narrator "周哲看了眼莫莫的成绩。"
 
     # ===== 显示莫莫成绩CG =====
@@ -893,8 +788,6 @@ label chapter3:
     narrator "果不其然，只有98.3504%%，S+！"
 
     hide cg score 98 with dissolve
-
-     proud at left
 
     narrator "呵呵。"
 
@@ -908,13 +801,9 @@ label chapter3:
 
     momo "前辈！你这是故意欺负人！"
 
-     neutral at left
-
     mc "哦？哪里欺负人了？"
 
     momo "我明明想和前辈一起拼机的，结果前辈你居然开一块钱欺负我！"
-
-     proud at left
 
     mc "莫莫，你怎么能这么认为呢？我只是想让你体验一下真代歌的乐趣。"
 
@@ -926,8 +815,6 @@ label chapter3:
 
     momo "哦~我知道了！一定我长得太帅了！前辈害怕被我抢了风头，所以才想方设法打败我，对不对！"
 
-     neutral at left
-
     momo "略略略，前辈真是超~~幼稚的！"
 
     momo "你就是嫉妒我比你帅，才故意找我麻烦的！"
@@ -938,11 +825,7 @@ label chapter3:
 
     momo "一副一语道破天机的神秘表情。"
 
-     angry at left
-
     mc "咳咳...你想多了。"
-
-     angry
 
     narrator "闻言，周哲尴尬地摸了摸鼻子。"
 
@@ -958,9 +841,7 @@ label chapter3:
 
     momo "前辈，你真的变坏了！我再也不喜欢你了！"
 
-     neutral at left
-
-    mc "......"
+    mc "……"
 
     narrator "这话怎么听起来怪怪的呢..."
 
@@ -979,19 +860,13 @@ label chapter3:
 
     momo "如果前辈你再要开怪歌的话，小心了，我可是会报仇的！"
 
-     neutral at left
-
-    mc "......"
+    mc "……"
 
     narrator "这小子要做什么？"
-
-     neutral
 
     narrator "只见，莫莫切换了选歌的排序，然后按照等级从高向低排列。"
 
     narrator "很快，他就锁定了14的等级，找到了那个东西。"
-
-     surprised at left
 
     narrator "周哲看着这首歌，顿时双腿发软，眼前一黑。"
 
@@ -1018,12 +893,11 @@ label chapter4:
 
     scene black with fade
 
-    # ===== 场景：提亚玛特的恐惧 =====
+    # ===== 场景：选歌开始 =====
     scene bg arcade_maimai with fade
 
     # play music bgm_tension fadein 1.0
 
-     pain at left
     show momo proud at right
 
     narrator "周哲险些昏死过去。"
@@ -1039,8 +913,6 @@ label chapter4:
     show momo cheerful at right
 
     momo "没有哦，我只是吓吓前辈。"
-
-     neutral at left
 
     narrator "周哲心中松了口气。"
 
@@ -1058,9 +930,7 @@ label chapter4:
 
     momo "才打一把就累了？我还期待着跟前辈再玩几把呢。"
 
-     angry at left
-
-    mc "......"
+    mc "……"
 
     narrator "你大爷啊！老子什么时候说要和你玩了！"
 
@@ -1071,8 +941,6 @@ label chapter4:
     momo "我也知道，前辈今天应该挺累的，不能为难前辈。"
 
     momo "那就勉为其难，和前辈打首小歌啦......"
-
-     neutral at left
 
     narrator "说着，莫莫将手伸向了右边的按键。"
 
@@ -1096,8 +964,6 @@ label chapter4:
 
     momo "莫莫似懂非懂的点了点头，乖巧的把手收回去，放在了左边的按键上。"
 
-     neutral at left
-
     narrator "周哲见状，终于松了口气。"
 
     narrator "接着，他就看到了莫莫手指落下的位置——"
@@ -1109,13 +975,9 @@ label chapter4:
 
     hide cg song amazing with dissolve
 
-     happy at left
-
     mc "诶哟，不错。"
 
     mc "确实是挺轻松的歌。"
-
-     happy
 
     narrator "然而，莫莫接下来的操作并没有让他轻松多少。"
 
@@ -1126,8 +988,6 @@ label chapter4:
 
     narrator "他给周哲开了红AM，然后自己去打紫的了！"
 
-     angry at left with hpunch
-
     mc "卧槽！！！"
 
     narrator "周哲顿时泪流满面，他已经完全忘记了自己之前说的话，只想大叫一声。"
@@ -1137,8 +997,6 @@ label chapter4:
     narrator "这tmd哪里是什么'体谅前辈'，这分明就是变相的嘲讽啊！"
 
     narrator "嘲讽他是个菜逼！"
-
-     neutral at left
 
     narrator "周哲深吸了一口气，压抑着心底的愤怒，努力维持微笑。"
 
@@ -1158,8 +1016,6 @@ label chapter4:
 
     narrator "嗯，就是酱紫。"
 
-     neutral
-
     narrator "周哲努力控制自己的情绪，努力让自己恢复冷静。"
 
     narrator "但是他看到莫莫的动作后，险些没控制住骂出声来。"
@@ -1169,8 +1025,6 @@ label chapter4:
     narrator "莫莫居然测过身来，继续点了一下周哲的6号键，把他的难度从13切换到了9！！！"
 
     narrator "从红AM，变成了黄AM！"
-
-     angry at left
 
     mc "你确定这样做真的好吗？"
 
@@ -1182,15 +1036,11 @@ label chapter4:
 
     mc "老子收13的时候，你还在那里打黄谱呢！"
 
-     angry
-
     narrator "周哲快崩溃了。"
 
     narrator "他发誓自从自己打舞萌以来，遇到的奇葩简直数不胜数，可像莫莫这么奇葩的，还真的是第一次碰见！"
 
     narrator "他甚至怀疑，莫莫是为了故意整他才入坑舞萌的？"
-
-     neutral at left
 
     mc "莫莫啊，你是不是对舞萌有什么误解？"
 
@@ -1208,13 +1058,9 @@ label chapter4:
 
     momo "很简单啊，只要看准时机，全部拍到就行啦!"
 
-     angry at left
-
     mc "(?д?)b"
 
     mc "你大爷啊！！！"
-
-     angry
 
     narrator "这孩子是不是脑子有问题？"
 
@@ -1231,11 +1077,8 @@ label chapter4:
     narrator "因为歌曲的选择，不是他说了算，而是莫莫说了算了。"
 
     # ===== 周哲的反击 =====
-     angry at left
 
     mc "莫莫，别太瞧不起人了！"
-
-     angry
 
     narrator "如今的他，已经被愤怒冲昏了头脑，丧失了理智。"
 
@@ -1262,8 +1105,6 @@ label chapter4:
 
     hide cg purple 14 with dissolve
 
-     proud at left
-
     narrator "周哲的眼中闪过了一丝阴狠，然后他毫不犹豫的按下了开始。"
 
     show momo surprised at right
@@ -1274,8 +1115,6 @@ label chapter4:
 
     momo "前辈，您的伤还没好啊！万一再受伤了就糟糕了！"
 
-     proud at left
-
     mc "怕个毛线！我的身体结实着呢！"
 
     show momo sad at right
@@ -1284,7 +1123,7 @@ label chapter4:
 
     mc "少罗嗦，我就想打14+，你别多管闲事！"
 
-    momo "不要啊，前辈。" with vpunch
+    momo "不要啊，前辈。"
 
     momo "你会累死的！真的会累死的！"
 
@@ -1299,7 +1138,6 @@ label chapter4:
     narrator "周哲没有再理睬他，而是专注于自己的机台。"
 
     # ===== 开始挑战 =====
-     determined at left
 
     narrator "很快，乐曲开始了。"
 
@@ -1309,11 +1147,7 @@ label chapter4:
 
     narrator "周哲的手指开始有些发疼，但他并没有放弃的意思。他想要证明自己的能力，也想向莫莫证明他的能力。"
 
-     determined
-
     narrator "然而，随着时间的推移，他感觉身体有些不对劲了。"
-
-     tired at left
 
     mc "好......累，卧槽。"
 
@@ -1329,15 +1163,11 @@ label chapter4:
 
     mc "好难受......"
 
-     tired
-
     narrator "他的手指逐渐变得僵硬，无法再像之前那样灵活地击打按键。"
 
     narrator "他的呼吸变得急促而不规律，汗水从额头上滴落下来。"
 
     narrator "他感到一阵晕眩，但他强迫自己集中精神，不让眼前的模糊影响他的判断。"
-
-     tired at left
 
     narrator "\"我不能放弃，不能输给那个家伙。\"周哲心中坚定地告诉自己。"
 
@@ -1359,9 +1189,6 @@ label chapter4:
 
     momo "呜呜呜，前辈你千万不能死啊，前辈！"
 
-     tired
-     neutral at center
-
     narrator "意识消失的前一刻，周哲隐约听到莫莫的哭声，他勉强睁开眼睛，然后看到了一张梨花带雨的俏丽脸庞。"
 
     mc "哈哈，莫莫，你可是男孩子，怎么能随便哭啊......"
@@ -1370,7 +1197,7 @@ label chapter4:
 
     narrator "只来得及发出一声闷哼，便彻底晕死在了地上。"
 
-    show momo crying at right with vpunch
+    show momo crying at right
 
     momo "前辈！！！！！！"
 
