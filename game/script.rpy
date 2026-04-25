@@ -17,7 +17,7 @@ init:
 
 # 背景占位符 (深灰色)
 image bg placeholder = Solid("#333333")
-image bg qq_group_day = Solid("#2C3E50")
+image bg arcade_1 = "images/bg/arcade_1.png"
 image bg room_evening = Solid("#1A1A2E")
 image bg street_day = Solid("#4A6741")
 image bg arcade_entrance = Solid("#3D2914")
@@ -85,7 +85,7 @@ label start:
 
     play music bgm_beginning fadein 5.0
     # ===== 场景1：QQ群聊 =====
-    scene bg qq_group_day with fade
+    scene bg arcade_1 with fade
 
     # 播放BGM
     mc "......"

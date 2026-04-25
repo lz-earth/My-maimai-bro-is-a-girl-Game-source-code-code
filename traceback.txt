@@ -1,40 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 85, in script
-    play music bgm_group_chat fadein 1.0
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/script.rpy", line 85, in <module>
-    play music bgm_group_chat fadein 1.0
-NameError: name 'bgm_group_chat' is not defined
+  File "game/options.rpy", line 121, in script
+    define config.automatic_oversampling = 3
+  File "renpy/common/000namespaces.rpy", line 34, in set
+    setattr(self.nso, name, value)
+Exception: config.automatic_oversampling is not a known configuration variable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 85, in script
-    play music bgm_group_chat fadein 1.0
-  File "C:\Users\57857\Desktop\开始\游戏\renpy\renpy-8.3.2-sdk\renpy\ast.py", line 1974, in execute
-    self.call("execute")
-  File "C:\Users\57857\Desktop\开始\游戏\renpy\renpy-8.3.2-sdk\renpy\ast.py", line 1953, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\57857\Desktop\开始\游戏\renpy\renpy-8.3.2-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "C:\Users\57857\Desktop\开始\游戏\renpy\renpy-8.3.2-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\57857\Desktop\开始\游戏\renpy\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 85, in <module>
-    play music bgm_group_chat fadein 1.0
-NameError: name 'bgm_group_chat' is not defined
+  File "game/options.rpy", line 121, in script
+    define config.automatic_oversampling = 3
+  File "C:\Users\57857\Desktop\开始\游戏\renpy\renpy-8.3.2-sdk\renpy\ast.py", line 2235, in execute
+    self.set()
+  File "C:\Users\57857\Desktop\开始\游戏\renpy\renpy-8.3.2-sdk\renpy\ast.py", line 2253, in set
+    ns.set(self.varname, value)
+  File "renpy/common/000namespaces.rpy", line 34, in set
+    setattr(self.nso, name, value)
+  File "C:\Users\57857\Desktop\开始\游戏\renpy\renpy-8.3.2-sdk\renpy\defaultstore.py", line 101, in __setattr__
+    raise Exception('config.%s is not a known configuration variable.' % (name))
+Exception: config.automatic_oversampling is not a known configuration variable.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.2.24090902
 一起玩音游的后辈，居然是女生 1.0
-Sat Apr 25 23:16:41 2026
+Sun Apr 26 00:12:34 2026

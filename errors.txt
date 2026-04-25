@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 1: expected statement.
-    ﻿
-     ^
+File "game/screens.rpy", line 108: 'with' is not a keyword argument or valid child of the text statement.
+    text what id "what" with dissolve
+                            ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Apr 25 23:23:36 2026
+Sat Apr 25 23:40:31 2026
