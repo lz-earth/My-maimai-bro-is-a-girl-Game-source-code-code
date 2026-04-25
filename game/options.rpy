@@ -1,6 +1,6 @@
-﻿## 此文件包含有可自定义您游戏的设置。
+## 此文件包含有可自定义您游戏的设置。
 ##
-## 以“##”开头的语句是注释，您不应该对其取消注释。以“#”开头的语句是注释掉的代码，
+## 以"##"开头的语句是注释，您不应该对其取消注释。以"#"开头的语句是注释掉的代码，
 ## 在适用的时候您可能需要对其取消注释。
 
 
@@ -24,7 +24,7 @@ define gui.show_name = True
 define config.version = "1.0"
 
 
-## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
+## 放置在游戏内"关于"屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
 ## 行。
 
 define gui.about = _p("""
@@ -159,8 +159,8 @@ init python:
     ##
     ## ** 匹配所有字符，包括目录分隔符。
     ##
-    ## 例如，“*.txt”匹配基础目录中的 txt 文件，“game/**.ogg”匹配游戏目录或任何子
-    ## 目录中的 ogg 文件，“**.psd”匹配项目中任何位置的 psd 文件。
+    ## 例如，"*.txt"匹配基础目录中的 txt 文件，"game/**.ogg"匹配游戏目录或任何子
+    ## 目录中的 ogg 文件，"**.psd"匹配项目中任何位置的 psd 文件。
 
     ## 将文件列为 None 来使其从构建的发行版中排除。
 
@@ -170,7 +170,7 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
-    ## 若要封装文件，需将其列为“archive”。
+    ## 若要封装文件，需将其列为"archive"。
 
     # build.classify('game/**.png', 'archive')
     # build.classify('game/**.jpg', 'archive')
@@ -183,7 +183,7 @@ init python:
 
 
 ## 执行应用内购需要一个 Google Play 许可密钥。许可密钥可以在 Google Play 开发者
-## 控制台的“Monetize” > “Monetization Setup” > “Licensing”页面找到。
+## 控制台的"Monetize" > "Monetization Setup" > "Licensing"页面找到。
 
 # define build.google_play_key = "..."
 

@@ -65,11 +65,14 @@ image cg purple 14 = Solid("#4B0082")
 image cg happy ending = Solid("#FFD700")
 
 # ==============================================================================
-# 音效定义（占位符 - 注释掉不存在的音频）
+# 音效定义
 # ==============================================================================
 # define sfx impact = "audio/sfx/impact.wav"
 # define sfx dislocate = "audio/sfx/dislocate.wav"
 # define sfx login = "audio/sfx/login.wav"
+
+# BGM定义
+define bgm_beginning = "audio/BGM/BGM_Beginning.mp3"
 
 # ==============================================================================
 # 第一章：女人，呵呵！
@@ -79,18 +82,13 @@ label start:
     # 黑场过渡
     scene black with fade
 
-    # 标题
-    centered "{size=+10}第一章{/size}"
-    centered "{size=+5}女人，呵呵！{/size}"
 
-    scene black with fade
-
+    play music bgm_beginning fadein 5.0
     # ===== 场景1：QQ群聊 =====
     scene bg qq_group_day with fade
 
-    # play music bgm_group_chat fadein 1.0
-
-    narrator "舞萌舞萌DX玩家群"
+    # 播放BGM
+    mc "......"
 
     mc "作为一个舞萌老玩家，我可以很负责任的告诉你，女性玩家和男性玩家是两个完全不同的群体呢。"
 
@@ -271,7 +269,7 @@ label start:
     mc "要是没记错的话，你一个月前才把提打到99啊。"
 
     hide momo surprised
-    show momo cheerful at right
+    show momo cheerful 
 
     momo "emmmm~"
 
